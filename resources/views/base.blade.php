@@ -11,7 +11,6 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 
     <title>Planinsko duštvo - @yield('title')</title>
-    <link rel="stylesheet" href="/resources/assets/theme.css">
 </head>
 <body>
 <div class="navbar navbar-inverse">
@@ -36,7 +35,7 @@
 
 <div class="container">
     <div class="row">
-        <div class="page-header sredinsko">
+        <div class="page-header text-center">
             <h1> @yield('page-heading')</h1>
         </div>
     </div>
