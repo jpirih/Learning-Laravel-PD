@@ -18,10 +18,12 @@
             <tr>
                 <th>Hike title </th>
                 <th>Guide</th>
+                <th>Seznam udelelžencev</th>
             </tr>
             <tr>
-                <td><a href="/hikes/smarna-gora">Šmarna gora </a></td>
+                <td><a href="/hikes/smarna-gora">Šmarna gora</a></td>
                 <td>Janez Kranjski</td>
+                <td><a href="/hikes/seznam-vseh">Seznam Prijavljenih</a></td>
             </tr>
 
         </table>

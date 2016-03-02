@@ -15,6 +15,9 @@ Route::get('/', ['uses' => 'HomeController@index']);
 Route::get('hikes', ['uses' => 'HomeController@hikes']);
 Route::get('about', ['uses' => 'HomeController@about']);
 Route::get('hikes/smarna-gora', ['uses' => 'HikesController@smarnaGoraHike']);
+Route::get('hikes/smarna-gora/prijava', ['uses' => 'HikesController@prijava']);
+Route::post('hikes/smarna-gora/prijava', ['uses' => 'HikesController@prijavaSave']);
+Route::get('hikes/seznam-vseh', ['uses' => 'HikesController@seznamVseh']);
 /*
 |--------------------------------------------------------------------------
 | Application Routes

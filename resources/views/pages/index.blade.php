@@ -9,6 +9,23 @@
 @endsection()
 
 @section('content')
+    <div class="row">
+        <div class="col-sm-6 col-sm-offset-3">
+            <div class="panel panel-primary">
+                <div class="panel-body">
+                    <p>
+                        <span class="vabilo">Pohod na Šmarno Goro:</span>  Zbiramo prijave za pohod
+                        na Šmarno goro ki bo v <span class="vabilo">soboto 13.3.2016</span>
+                        Zbirno mesto je v na <span class="vabilo">avtobusni postaji</span> ob <span class="vabilo">7:00</span>
+                        Prijavi se čimprej Se vidimo
+                    </p>
+                    <p>
+                        <a href="/hikes/smarna-gora/prijava" class="btn btn-primary">Prijavi se</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
     <div class="col-sm-6 col-sm-offset-3">
         <h2>Hello! :)</h2>
         <p>
