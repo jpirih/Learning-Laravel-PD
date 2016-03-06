@@ -44,8 +44,9 @@ class HikesController extends Controller
         $pohodnik->save();
 
 
-        return redirect('hikes/seznam-vseh')->with('status','Hvala za prijavo se vidimo na pohodu! :)');
+        return redirect(route('participants'))->with('status','Hvala za prijavo se vidimo na pohodu! :)');
     }
+    // seznam vseh prijavljenih na pohod
 
     public function seznamVseh(){
         $pohod = 'Šmarna Gora';

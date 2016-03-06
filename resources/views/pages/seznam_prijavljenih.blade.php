@@ -9,13 +9,17 @@
 @endsection
 
 @section('content')
-    @if(session('status'))
-        <div class="col-sm-6 col-sm-offset-3">
-            <div class="alert alert-success">
-                {{ session('status') }}
-            </div>
+    <div class="container">
+        <div class="row">
+            @if(session('status'))
+                <div class="col-sm-6 col-sm-offset-3">
+                    <div class="alert alert-success">
+                        {{ session('status') }}
+                    </div>
+                </div>
+            @endif
         </div>
-    @endif
+
         <!-- general data section top middle blue box -->
         <div class="row">
             <div class="col-sm-2">
@@ -35,52 +39,54 @@
                     </a>
                 </p>
             </div>
-        <div class="col-sm-4 col-sm-offset-2">
-            <div class="panel panel-primary">
-                <div class="panel-heading">
-                    General data
-                </div>
-                <div class="panel-body">
-                    <p>
-                        <span class="krepko">Pohod:</span> {{ $pohod }}
-                    </p>
-                    <p>
-                        <span class="krepko">Datum:</span> {{ $datum }}
-                    </p>
-                    <p>
-                        <span class="krepko">Vodnik:</span> {{ $guide }}
-                    </p>
-                    <p>
-                        <span class="krepko"> Trenutno prijavljenih: </span> {{  $stevPrijavljenih }}
-                    </p>
+            <div class="col-sm-4 col-sm-offset-2">
+                <div class="panel panel-primary">
+                    <div class="panel-heading">
+                        General data
+                    </div>
+                    <div class="panel-body">
+                        <p>
+                            <span class="krepko">Pohod:</span> {{ $pohod }}
+                        </p>
+                        <p>
+                            <span class="krepko">Datum:</span> {{ $datum }}
+                        </p>
+                        <p>
+                            <span class="krepko">Vodnik:</span> {{ $guide }}
+                        </p>
+                        <p>
+                            <span class="krepko"> Trenutno prijavljenih: </span> {{  $stevPrijavljenih }}
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-    <!-- tabela z vsemi pohodniki  -->
-    <div class="row">
-        <div class="col-sm-8 col-sm-offset-2">
-            <table class="table table-bordered table-responsive">
-                <thead>
-                <tr>
-                    <th>Ime</th>
-                    <th>Priimek</th>
-                    <th>Email</th>
-                    <th>Datum Rojstva</th>
-                </tr>
-                </thead>
-                <tbody>
-                @foreach($pohodniki as $pohodnik)
+        <!-- tabela z vsemi pohodniki  -->
+        <div class="row">
+            <div class="col-sm-8 col-sm-offset-2">
+                <table class="table table-bordered table-responsive table-striped">
+                    <thead>
                     <tr>
-                        <td>{{ $pohodnik->name }}</td>
-                        <td>{{ $pohodnik->surname }}</td>
-                        <td>{{ $pohodnik->email }}</td>
-                        <td>{{ $pohodnik->birth_date }}</td>
+                        <th>Ime</th>
+                        <th>Priimek</th>
+                        <th>Email</th>
+                        <th>Datum Rojstva</th>
                     </tr>
-                @endforeach
-                </tbody>
+                    </thead>
+                    <tbody>
+                    @foreach($pohodniki as $pohodnik)
+                        <tr>
+                            <td>{{ $pohodnik->name }}</td>
+                            <td>{{ $pohodnik->surname }}</td>
+                            <td>{{ $pohodnik->email }}</td>
+                            <td>{{ $pohodnik->birth_date }}</td>
+                        </tr>
+                    @endforeach
+                    </tbody>
 
-            </table>
+                </table>
+            </div>
         </div>
     </div>
+
 @endsection

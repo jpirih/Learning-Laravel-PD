@@ -2,8 +2,9 @@
 
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
+use Illuminate\Support\Facades\Schema;
 
-class CreateHikersTable extends Migration
+class CreateDificultyTable extends Migration
 {
     /**
      * Run the migrations.
@@ -12,14 +13,12 @@ class CreateHikersTable extends Migration
      */
     public function up()
     {
-        Schema::create('hikers', function(Blueprint $blueprint){
+        Schema::create('difficulties', function(Blueprint $blueprint){
             $blueprint->increments('id');
-            $blueprint->integer('hiker_type_id');
-            $blueprint->string('name', 155);
-            $blueprint->string('surname',155);
-            $blueprint->string('phone');
-            $blueprint->string('email');
-            $blueprint->date('birth_date');
+            $blueprint->string('label');
+            $blueprint->string('name', 60);
+
+
             $blueprint->timestamps();
         });
     }
@@ -31,6 +30,6 @@ class CreateHikersTable extends Migration
      */
     public function down()
     {
-        Schema::drop('hikers');
+        Schema::drop('difficulties');
     }
 }
