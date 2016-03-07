@@ -14,11 +14,15 @@
             <div class="col-md-6 col-md-offset-3">
                 <div class="btn-group btn-group-lg">
                     <a href="{{ route('dashboard') }}" class="btn btn-default">
-                        <span class="glyphicon glyphicon-th-list"></span>
+                        <span class="glyphicon glyphicon-dashboard"></span>
                         Dashboard
                     </a>
                     <a href="/" class="btn btn-default">
                         <span class=" glyphicon glyphicon-home"></span> Domov
+                    </a>
+                    <a href="{{ route('hike_panel') }}" class="btn btn-default">
+                        <span class="glyphicon glyphicon-triangle-top"></span>
+                        Hikes
                     </a>
                 </div>
             </div>

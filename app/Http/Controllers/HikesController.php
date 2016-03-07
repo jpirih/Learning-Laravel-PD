@@ -2,6 +2,8 @@
 
 namespace App\Http\Controllers;
 
+use App\Difficulty;
+use App\Hike;
 use App\Hiker;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Redirect;
@@ -15,11 +17,48 @@ use Monolog\Handler\NullHandlerTest;
 
 class HikesController extends Controller
 {
+    // hikes dashboard
+    public function hikePanel(){
+        $hikes = Hike::all();
+        return view('pages.hike_management', ['hikes' => $hikes]);
+    }
+    // add new hike
+    public function addHike(){
+        $difficulties = Difficulty::all();
+        $guides = Hiker::where('hiker_type_id','=',3)->get();
+        return view('pages.add_hike', ['difficulties' => $difficulties, 'guides' => $guides]);
+    }
 
-    public function smarnaGoraHike(){
-        $title = "Šmarna Gora";
-        $guide = "Janez Kranjski";
-        return view('pages.smarna_gora', ['title' => $title, 'guide' => $guide]);
+    // save new hike to the database
+    public function saveHike(){
+        $hike = new Hike;
+        $name = Request::get('name');
+        $altitude = Request::get('altitude');
+        $difficulty = Request::get('difficulties');
+        $openFrom = Request::get('open_from');
+        $openTo = Request::get('open_to');
+        $guide = Request::get('guides');
+        $description = Request::get('description');
+        $imgUrl = Request::get('img_url');
+
+        $hike->name = $name;
+        $hike->altitude = $altitude;
+        $hike->difficulty_id = $difficulty[0];
+        $hike->open_form = $openFrom;
+        $hike->open_to = $openTo;
+        $hike->guide_id = $guide[0];
+        $hike->description = $description;
+        $hike->img_url = $imgUrl;
+
+        $hike->save();
+
+        return redirect(route('hike_panel'));
+
+    }
+
+    public function hikeDetails($id){
+        $hike = Hike::find($id);
+        return view('pages.about_hike', ['hike' => $hike]);
     }
 
     public function prijava(){
@@ -29,34 +68,7 @@ class HikesController extends Controller
     /**
      * @return RedirectResponse|\Illuminate\Routing\Redirector
      */
-    public function prijavaSave(){
-        $name = Request::get('name');
-        $surname = Request::get('surname');
-        $email = Request::get('email');
-        $birth_date = Request::get('birth_date');
-
-        $pohodnik = new Hiker;
-        $pohodnik->name = $name;
-        $pohodnik->surname = $surname;
-        $pohodnik->email = $email;
-        $pohodnik->birth_date = $birth_date;
-
-        $pohodnik->save();
 
 
-        return redirect(route('participants'))->with('status','Hvala za prijavo se vidimo na pohodu! :)');
-    }
-    // seznam vseh prijavljenih na pohod
-
-    public function seznamVseh(){
-        $pohod = 'Šmarna Gora';
-        $datum = '13.3.2016';
-        $guide = 'Janez Kranjski';
-
-        $pohodniki = Hiker::all();
-        $stevPrijavljenih = DB::table('hikers')->count();
-
-        return view('pages.seznam_prijavljenih', ['pohod'=> $pohod, 'datum' => $datum, 'guide' => $guide,
-            'pohodniki' => $pohodniki, 'stevPrijavljenih' => $stevPrijavljenih]);
-    }
+    
 }

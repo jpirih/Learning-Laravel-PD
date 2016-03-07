@@ -17,6 +17,7 @@ class CreateHikesTable extends Migration
             $blueprint->increments('id');
             $blueprint->string('name');
             $blueprint->integer('altitude');
+            $blueprint->integer('difficulty_id');
             $blueprint->date('open_form');
             $blueprint->date('open_to');
             $blueprint->text('description');

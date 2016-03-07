@@ -15,8 +15,8 @@ class DashboardController extends Controller
         return view('pages.dashboard');
     }
     
-    //hiker types management page
-    public function hikerTypes(){
+    //hiker  management page
+    public function hikerPanel(){
         $hikerTypes = HikerType::all();
         $hikers = Hiker::all();
         return view('pages.hiker_management', ['hikerTypes' => $hikerTypes, 'hikers' => $hikers]);

@@ -26,7 +26,7 @@
                     <span class="glyphicon glyphicon-th-list"></span>
                     Hikers
                 </a>
-                <a href="#" class="btn btn-default">
+                <a href="{{ route('hike_panel') }}" class="btn btn-default">
                     <span class="glyphicon glyphicon-triangle-top"></span>
                     Hikes
                 </a>

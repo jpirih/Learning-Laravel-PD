@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Hike;
 use Illuminate\Http\Request;
 
 use App\Http\Requests;
@@ -14,7 +15,8 @@ class HomeController extends Controller
    }
 
     public function hikes(){
-        return view('pages.hikes');
+        $hikes =Hike::all();
+        return view('pages.hikes', ['hikes' => $hikes]);
     }
 
     public function about(){

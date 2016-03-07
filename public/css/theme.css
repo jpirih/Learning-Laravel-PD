@@ -13,4 +13,6 @@
     font-family: Arial;
     font-size: large;
 }
-
+body{
+    padding-bottom: 15px;
+}

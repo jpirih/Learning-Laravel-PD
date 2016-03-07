@@ -22,7 +22,7 @@
                             Prijavi se čimprej Se vidimo
                         </p>
                         <p>
-                            <a href="/hikes/smarna-gora/prijava" class="btn btn-primary">Prijavi se</a>
+                            Prijave trenutno niso mogoče zaradi vzdrževaja Kmalu bo bolje :)
                         </p>
                     </div>
                 </div>
