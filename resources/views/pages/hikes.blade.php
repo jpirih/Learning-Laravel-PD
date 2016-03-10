@@ -5,30 +5,40 @@
 @endsection
 
 @section('page-heading')
-    All Our Hikes
+    Hribi na katere organiziramo pohode ali izlete
 @endsection
 
 @section('content')
     <div class="container">
         <div class="row">
+            @if(session('status'))
+                <div class="col-sm-6 col-sm-offset-3">
+                    <div class="alert alert-success">
+                        {{ session('status') }}
+                    </div>
+                </div>
+            @endif
             <div class="col-sm-8 col-sm-offset-2">
                 <p>
-                    In the table below are listed click on Hhike title
+                    V spodnji tabeli so so našteti hribi na katere oganizhiramo izlete
+                    za več podrobnosti kliknite na  naziv hriba.
                 </p>
                 @if(count($hikes) == 0)
                     <div class="well">
                         <p>
                             <span class="glyphicon glyphicon-info-sign"></span>
-                            There is no hikes in the database To add new hike go to dashboard Hikes
-                            section
+                            Trenutno ni shranjeih opisov hirobv v bazi za dodajanje novega
+                            klikni na Hribi na Dashbord zavihku
                         </p>
                     </div>
                 @else
                     <table class="table table-responsive table-bordered table-striped">
                         <thead>
                         <tr>
-                            <th>Hike name</th>
-                            <th>Guide</th>
+                            <th>Hrib</th>
+                            <th>Vodnik</th>
+                            <th>Datum izleta</th>
+                            <th>Prijava</th>
                         </tr>
                         </thead>
                         <tbody>
@@ -38,16 +48,23 @@
                                     <td>
                                         {{ $hike->guide->name }} {{$hike->guide->surname}}
                                     </td>
+                                    @foreach($events as $event)
+                                        @if($event->hike_id == $hike->id)
+                                            <td>{{ $event->start }}</td>
+                                        <td><a href="{{route('event_signup', ['id' => $hike->id])}}" class="btn btn-primary">
+                                                Prijava
+                                            </a>
+                                        </td>
+                                        @else
+                                            <td> ni organiziranega izleta </td>
+                                            <td></td>
+                                        @endif
+                                    @endforeach
                                 </tr>
                             @endforeach
                         </tbody>
                     </table>
                 @endif
-
-                <table class="table table-bordered table-responsive">
-
-                </table>
-
             </div>
         </div>
     </div>

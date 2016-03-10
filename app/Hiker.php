@@ -16,4 +16,11 @@ class Hiker extends Model
     public function hikes_guide(){
         return $this->hasMany('App\Hike');
     }
+
+    // many-to-many connection with events table using pivot table events_hikers
+    public function events(){
+        return $this->belongsToMany('App\Event', 'events_hikers');
+    }
+
+
 }

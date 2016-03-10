@@ -22,9 +22,9 @@
 
         <div class="collapse navbar-collapse" id="nav_zg" >
             <ul class="nav navbar-nav navbar-right">
-                <li><a href="/">Home</a></li>
-                <li><a href="{{ route('hikes') }}">Hieks</a></li>
-                <li><a href="{{ route('about') }}">About</a></li>
+                <li><a href="/">Domov</a></li>
+                <li><a href="{{ route('hikes') }}">Hribi</a></li>
+                <li><a href="{{ route('about') }}">O nas</a></li>
                 <li><a href="{{ route('dashboard') }}">Dashboard</a></li>
             </ul>
         </div>

@@ -9,28 +9,43 @@
 @section('content')
     <div class="contairner">
         @section('page-heading')
-            Welcome at Hobby PD Website!
+            Dobrodošli na spletni strani Hobby PD!
         @endsection()
+
         <div class="row">
             <div class="col-sm-6 col-sm-offset-3">
-                <div class="panel panel-primary">
-                    <div class="panel-body">
-                        <p>
-                            <span class="vabilo">Pohod na Šmarno Goro:</span>  Zbiramo prijave za pohod
-                            na Šmarno goro ki bo v <span class="vabilo">soboto 13.3.2016</span>
-                            Zbirno mesto je v na <span class="vabilo">avtobusni postaji</span> ob <span class="vabilo">7:00</span>
-                            Prijavi se čimprej Se vidimo
-                        </p>
-                        <p>
-                            Prijave trenutno niso mogoče zaradi vzdrževaja Kmalu bo bolje :)
-                        </p>
+                <h3> Aktualni izleti </h3>
+                @if(count($events) != 0)
+                    <div class="panel panel-primary">
+                        <div class="panel-body">
+                            @foreach($events as $event)
+                                <p>
+                                    <span class="vabilo">Pohod</span>: Zbiramo prijave za pohod na
+                                    <span class="vabilo">{{ $event->hike->name }}:</span>,
+                                     Ki bo dne <span class="vabilo">{{$event->start}}</span> {{ $event->info }}
+                                </p>
+                                <p>
+                                    Prijavi se tukaj
+                                    <a href="{{route('event_signup', ['id' => $event->hike->id])}}" class="btn btn-primary">
+                                        Prijava
+                                    </a>
+                                </p>
+                            @endforeach
+                        </div>
                     </div>
+                @else
+                <div class="well">
+                    <p>
+                        <span class="glyphicon glyphicon-info-sign"></span>
+                        Trenutno ni organiziranih izletov
+                    </p>
                 </div>
+                @endif
             </div>
             </div>
             <div class="row">
                 <div class="col-sm-6 col-sm-offset-3">
-                    <h2>Hello! :)</h2>
+                    <h2>Zdravo! :)</h2>
                     <p>
                         Pellentesque egestas dolor convallis orci bibendum, id ornare sem pharetra.
                         Integer sed magna vel dolor faucibus elementum vitae vel ipsum. Maecenas vel mattis nisi.

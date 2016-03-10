@@ -5,14 +5,14 @@
 @endsection
 
 @section('page-heading')
-    About Hobby PD
+    Vse o našem planinskem društvu Hobby PD
 @endsection
 
 @section('content')
     <div class="container">
         <div class="row">
             <div class="col-sm-6 col-sm-offset-3">
-                <h2>History</h2>
+                <h2>Zgodovina</h2>
                 <p>
                     Hobby Pd was established in 1916 in little town called Middle of Nowhere.
                     Vivamus volutpat urna volutpat, faucibus justo tempus, iaculis nulla.
@@ -23,7 +23,7 @@
                     ipsum primis in faucibus. Donec interdum dolor sagittis, semper libero at, tincidunt quam.
                 </p>
 
-                <h2>Activities</h2>
+                <h2>Aktivnosti</h2>
                 <p>
                     Donec nisi est, semper a dapibus sed, scelerisque at leo. Pellentesque dictum vestibulum arcu, a
                     dictum massa euismod non. Nullam et odio sed lectus elementum cursus non in mi. Sed elit est,
@@ -37,7 +37,7 @@
                 <img src="https://hikeontarioblog.files.wordpress.com/2013/10/hikers001.png" alt="hikers" class=" img img-responsive">
             </span>
                 </p>
-                <h2>Goles for future </h2>
+                <h2>Cilji za naprej</h2>
                 <p>
                     Phasellus in tortor posuere, commodo lorem elementum, aliquet leo. Sed sodales lobortis sagittis.
                     Vivamus porta sit amet dui sed auctor. Etiam varius mauris eget velit iaculis, quis hendrerit mi egestas.

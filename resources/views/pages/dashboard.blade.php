@@ -14,28 +14,28 @@
         <div class="col-md-3">
             <div class="panel panel-primary">
                 <div class="panel-body">
-                    <h3>Info Section</h3>
+                    <h3>Informacije</h3>
                 </div>
             </div>
 
         </div>
         <div class="col-md-6">
             <div class="btn-group btn-group-lg">
-                <a href="/" class="btn btn-default"> <span class="glyphicon glyphicon-home"></span> Home</a>
+                <a href="/" class="btn btn-default"> <span class="glyphicon glyphicon-home"></span> Domov</a>
                 <a href="{{ route('hiker_panel') }}" class="btn btn-default">
                     <span class="glyphicon glyphicon-th-list"></span>
-                    Hikers
+                    Pohodniki
                 </a>
                 <a href="{{ route('hike_panel') }}" class="btn btn-default">
                     <span class="glyphicon glyphicon-triangle-top"></span>
-                    Hikes
+                    Hribi
                 </a>
             </div>
         </div>
         <div class="col-md-3">
             <div class="panel panel-primary">
                 <div class="panel-body">
-                    <h3>Quick over view </h3>
+                    <h3>Hitri Pregled </h3>
                 </div>
             </div>
         </div>

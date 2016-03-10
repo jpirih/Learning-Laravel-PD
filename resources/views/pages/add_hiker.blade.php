@@ -5,7 +5,7 @@
 @endsection
 
 @section('page-heading')
-    Add new hiker
+    Dodaj Pohodnika
 @endsection
 
 @section('content')
@@ -13,6 +13,16 @@
         <div class="row">
             <!-- prijavni obrazec -->
             <div class="col-sm-6 col-sm-offset-3">
+                @if (count($errors) > 0)
+                    <div class="alert alert-danger">
+                        <ul>
+                            @foreach ($errors->all() as $error)
+                                <li>{{ $error }}</li>
+                            @endforeach
+                        </ul>
+                    </div>
+                @endif
+
                 <form action="" method="post"   class="form-horizontal">
                     <input type="hidden" name="_token" value="{{csrf_token()}}">
                     <div class="form-group">
@@ -34,13 +44,13 @@
                         </div>
                     </div>
                     <div class="form-group">
-                        <label for="phone"class="col-sm-4 control-label">Phone (031-123-456)</label>
+                        <label for="phone"class="col-sm-4 control-label">Telefon (031-123-456)</label>
                         <div class="col-sm-8">
                             <input type="text" name="phone" id="phone" class="form-control" >
                         </div>
                     </div>
                     <div class="form-group">
-                        <label for="hikerTypes" class="col-sm-4 control-label">Hiker type</label>
+                        <label for="hikerTypes" class="col-sm-4 control-label">Tip pohodnika</label>
                         <div class="col-sm-8">
                             @foreach($hikerTypes as $hikerType)
                                 <input type="radio" name="hikerTypes[]" value="{{$hikerType->id}}" class="radio radio-inline" >
@@ -51,10 +61,11 @@
                     <div class="form-group">
                         <label for="birth_date" class="col-sm-4 control-label">Datum rojstva (YYYY-MM-DD)</label>
                         <div class="col-sm-8">
-                            <input type="text" name="birth_date" id="birth_date" class="form-control">
+                            <input type="date" name="birth_date" id="birth_date" class="form-control">
                             <br>
                             <button type="submit" class="btn btn-primary btn-block">
-                                Save Hikers info!
+                                <span class="glyphicon glyphicon-save"></span>
+                                Shrani podatke!
                             </button>
                         </div>
 

@@ -5,14 +5,14 @@
 @endsection
 
 @section('page-heading')
-    About {{ $hike->name }}
+    Vse o {{ $hike->name }}
 @endsection
 
 @section('content')
     <div class="container">
         <div class="row">
             <div class="col-sm-6 col-sm-offset-3">
-                <h2> About hike </h2>
+                <h2> O hribu </h2>
                 <p>
                     {{$hike->description}}
                 </p>
@@ -21,12 +21,12 @@
                     <table class="table table-bordered table-responsive table-striped ">
                         <thead>
                         <tr>
-                            <th>Name</th>
-                            <th>Altitude</th>
-                            <th>Difficulty</th>
-                            <th>Open From</th>
-                            <th>Open_to</th>
-                            <th>Guide</th>
+                            <th>Naziv</th>
+                            <th>Nadmorska višina</th>
+                            <th>Zahtevnost</th>
+                            <th>Odprto od</th>
+                            <th>Odprto do</th>
+                            <th>Vodnik</th>
                         </tr>
                         </thead>
                         <tbody>
