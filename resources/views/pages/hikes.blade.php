@@ -34,14 +34,14 @@
                 @else
                     <table class="table table-responsive table-bordered table-striped">
                         <thead>
-                        <tr>
+                        <tr class="glava">
                             <th>Hrib</th>
                             <th>Vodnik</th>
                             <th>Datum izleta</th>
                             <th>Prijava</th>
                         </tr>
                         </thead>
-                        <tbody>
+                        <tbody class="bg-info table-striped">
                             @foreach($hikes as $hike)
                                 <tr>
                                     <td><a href="{{ route('about_hike', ['id' => $hike->id]) }}">{{ $hike->name }}</a></td>
@@ -49,17 +49,14 @@
                                         {{ $hike->guide->name }} {{$hike->guide->surname}}
                                     </td>
                                     @foreach($events as $event)
-                                        @if($event->hike_id == $hike->id)
-                                            <td>{{ $event->start }}</td>
+                                        <td>{{ $event->start }}</td>
                                         <td><a href="{{route('event_signup', ['id' => $hike->id])}}" class="btn btn-primary">
-                                                Prijava
-                                            </a>
-                                        </td>
-                                        @else
-                                            <td> ni organiziranega izleta </td>
-                                            <td></td>
-                                        @endif
+                                            Prijava
+                                        </a>
+                                    </td>
                                     @endforeach
+                                    <td><span class="glyphicon glyphicon-info-sign"></span> Trenutno ni organiziranega izleta</td>
+                                    <td> Prijava ni mogoča</td>
                                 </tr>
                             @endforeach
                         </tbody>

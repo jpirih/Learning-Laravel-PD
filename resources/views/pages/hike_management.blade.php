@@ -42,15 +42,15 @@
                 @else
                     <table class="table table-responsive table-bordered table-striped">
                         <thead>
-                        <tr>
-                            <th>Name</th>
-                            <th>Altitude</th>
-                            <th>Difficulty</th>
-                            <th>Guide</th>
-                            <th>Settings</th>
+                        <tr class="glava">
+                            <th>Naziv</th>
+                            <th>Nadmorska višina</th>
+                            <th>Težavnost</th>
+                            <th>Vodnik</th>
+                            <th>Uredi</th>
                         </tr>
                         </thead>
-                        <tbody>
+                        <tbody class=" table-striped bg-info">
                             @foreach($hikes as $hike)
                                 <tr>
                                     <td><a href="{{ route('about_hike', ['id' => $hike->id]) }}">{{ $hike->name }}</a></td>
@@ -58,8 +58,41 @@
                                     <td>{{ $hike->difficulty->name }}</td>
                                     <td>{{ $hike->guide->name }}  {{ $hike->guide->surname }}</td>
                                     <td>
-                                        <a href="#" class="btn bg-primary">Settings</a>
+                                        <a href="#" class="btn bg-primary">Uredi</a>
                                     </td>
+                                </tr>
+                            @endforeach
+                        </tbody>
+                    </table>
+                @endif
+                <br>
+                <!-- vsi izleti -->
+                <h2> Vsi organizirani izleti</h2>
+                @if(count($allEvents) == 0)
+                    <div class="well">
+                        <span class="glyphicon glyphicon-info-sign"></span>
+                        V bazi trenutno ni shranjenih podatkov o izletih. Za dodajanje klikni
+                        na gumb organiziraj izlet
+                    </div>
+                @else
+                    <table class="table table-bordered table responsive table-striped">
+                        <thead>
+                            <tr class="glava">
+                                <th>Začetek</th>
+                                <th>Konec</th>
+                                <th>Hrib</th>
+                                <th>Cena €</th>
+                                <th>Več</th>
+                            </tr>
+                        </thead>
+                        <tbody class="bg-info table-striped">
+                            @foreach($allEvents as $event)
+                                <tr>
+                                    <td>{{ $event->start }}</td>
+                                    <td>{{ $event->end }}</td>
+                                    <td>{{ $event->hike->name }}</td>
+                                    <td>{{ $event->price }}</td>
+                                    <td><a href="#" class="btn btn-primary">Info</a></td>
                                 </tr>
                             @endforeach
                         </tbody>
@@ -78,7 +111,7 @@
                         </a>
                         <hr>
                         <!-- organizacija izleta -->
-                        <h3> Organizirani izleti </h3>
+                        <h3> Aktualni izleti </h3>
                         @if(count($events) == 0)
                             <div class="well">
                                 <span class="glyphicon glyphicon-info-sign"></span>

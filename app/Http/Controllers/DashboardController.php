@@ -10,6 +10,11 @@ use Illuminate\Support\Facades\Request;
 
 class DashboardController extends Controller
 {
+    public function __construct()
+    {
+        $this->middleware('auth');
+    }
+
     // dashboard main page
     public function dashboard(){
         return view('pages.dashboard');

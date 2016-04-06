@@ -25,7 +25,27 @@
                 <li><a href="/">Domov</a></li>
                 <li><a href="{{ route('hikes') }}">Hribi</a></li>
                 <li><a href="{{ route('about') }}">O nas</a></li>
-                <li><a href="{{ route('dashboard') }}">Dashboard</a></li>
+                @if(Auth::guest())
+                    <li>
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+                            Gost <span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu" role="menu">
+                            <li><a href="{{ url('/login') }}">Prijava</a></li>
+                            <li><a href="{{ url('/register') }}">Registracija</a></li>
+                        </ul>
+                    </li>
+                @else
+                    <li>
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">
+                            {{ Auth::user()->name }} <span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu" role="menu">
+                            <li><a href="{{ route('dashboard') }}">Dashboard</a></li>
+                            <li><a href="{{ url('/logout') }}">Odjava</a></li>
+                        </ul>
+                    </li>
+                @endif
             </ul>
         </div>
     </div>

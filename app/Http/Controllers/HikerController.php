@@ -11,6 +11,11 @@ use Illuminate\Support\Facades\Request;
 
 class HikerController extends Controller
 {
+    public function __construct()
+    {
+        $this->middleware('auth');
+    }
+
     //hiker  management page
     public function hikerPanel(){
         $hikerTypes = HikerType::all();

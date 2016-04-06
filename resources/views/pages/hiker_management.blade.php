@@ -61,7 +61,7 @@
                 @else
                     <table class="table table-bordered table-responsive table-striped">
                         <thead>
-                        <tr>
+                        <tr class="glava">
                             <th>Ime</th>
                             <th>Priimek</th>
                             <th>E-mail</th>
@@ -70,7 +70,7 @@
                             <th> Tip pohodnika</th>
                         </tr>
                         </thead>
-                        <tbody>
+                        <tbody class="bg-info table-striped">
                             @foreach($hikers as $hiker)
                                 <tr>
                                     <td>{{ $hiker->name }}</td>
@@ -129,14 +129,14 @@
                 @else
                     <table class="table table-bordered table-striped">
                         <thead>
-                            <tr>
+                            <tr class="glava">
                                 <th># Id</th>
                                 <th>Hiker Type</th>
                                 <th>Ustvarjen</th>
                                 <th> Zadnja Sprememba</th>
                             </tr>
                         </thead>
-                        <tbody>
+                        <tbody class="bg-info table-striped">
                         @foreach($hikerTypes as $hikerType)
                             <tr>
                                 <td>{{ $hikerType->id }}</td>

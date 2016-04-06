@@ -20,7 +20,7 @@
                 <div>
                     <table class="table table-bordered table-responsive table-striped ">
                         <thead>
-                        <tr>
+                        <tr class="glava">
                             <th>Naziv</th>
                             <th>Nadmorska višina</th>
                             <th>Zahtevnost</th>

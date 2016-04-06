@@ -26,8 +26,8 @@ class SaveHikeRequest extends Request
         return [
             'name' => 'required',
             'altitude' => 'required|numeric',
-            'open_form' =>'required|date',
-            'open_to' => 'required|date|after:open_form',
+            'open_form' =>'date',
+            'open_to' => 'date|after:open_form',
             'description' => 'required',
             'img_url' => 'url'
         ];

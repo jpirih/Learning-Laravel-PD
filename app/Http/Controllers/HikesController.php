@@ -23,6 +23,11 @@ use Monolog\Handler\NullHandlerTest;
 
 class HikesController extends Controller
 {
+   public function __construct()
+   {
+       $this->middleware('auth');
+   }
+
     // hikes dashboard
     public function hikePanel(){
         Carbon::setLocale('sl');
@@ -31,7 +36,8 @@ class HikesController extends Controller
         $hikes = Hike::all();
         $difficulties = Difficulty::all();
         $events = Event::where('start', '>=', $td)->get();
-        return view('pages.hike_management', ['hikes' => $hikes, 'difficulties' => $difficulties, 'events' => $events]);
+        $allEvents = Event::all();
+        return view('pages.hike_management', ['hikes' => $hikes, 'difficulties' => $difficulties, 'events' => $events, 'allEvents' => $allEvents]);
     }
     // add new hike
     public function addHike(){
@@ -66,11 +72,7 @@ class HikesController extends Controller
         return redirect(route('hike_panel'));
 
     }
-    // all you need to know about  hike
-    public function hikeDetails($id){
-        $hike = Hike::find($id);
-        return view('pages.about_hike', ['hike' => $hike]);
-    }
+    
     // hike diffieculty
     public function saveDifficulty(SaveDifficultyRequest $request){
         $difficulty = new Difficulty();

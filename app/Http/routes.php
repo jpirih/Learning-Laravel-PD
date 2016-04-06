@@ -23,11 +23,11 @@
 */
 
 Route::group(['middleware' => ['web']], function () {
+    Route::auth();
     Route::get('/', ['uses' => 'HomeController@index']);
     Route::get('hikes', ['uses' => 'HomeController@hikes', 'as' => 'hikes']);
     Route::get('about', ['uses' => 'HomeController@about', 'as' => 'about']);
-    Route::get('hike/{id}/about', ['uses' => 'HikesController@hikeDetails', 'as' => 'about_hike']);
-    Route::get('hikes/smarna-gora/prijava', ['uses' => 'HikesController@prijava']);
+    Route::get('hike/{id}/about', ['uses' => 'HomeController@hikeDetails', 'as' => 'about_hike']);
     Route::post('hikes/smarna-gora/prijava', ['uses' => 'HikesController@prijavaSave']);
     Route::get('hikes/participants', ['uses' => 'HikesController@seznamVseh', 'as' => 'participants']);
     Route::get('dashboard', ['uses' => 'DashboardController@dashboard', 'as' => 'dashboard']);
@@ -44,3 +44,4 @@ Route::group(['middleware' => ['web']], function () {
     Route::get('hike/{id}/sign-up', ['uses' => 'HikesController@eventSignUp', 'as' => 'event_signup']);
     Route::post('hike/{id}/sign-up', ['uses' => 'HikesController@saveEventSignup']);
 });
+
