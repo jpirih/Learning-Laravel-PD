@@ -77,7 +77,7 @@
                                     <td>{{ $hiker->surname }}</td>
                                     <td>{{$hiker->email}}</td>
                                     <td>{{$hiker->phone}}</td>
-                                    <td>{{$hiker->birth_date}}</td>
+                                    <td>{{$hiker->birth_date->format('d.m.Y')}}</td>
                                     <!-- klic povezovalne funkcije na Hiker modelu -->
                                     <td>{{ $hiker->hiker_type->name }}</td>
                                 </tr>
@@ -132,7 +132,7 @@
                             <tr class="glava">
                                 <th># Id</th>
                                 <th>Hiker Type</th>
-                                <th>Ustvarjen</th>
+                                <th>Vnos</th>
                                 <th> Zadnja Sprememba</th>
                             </tr>
                         </thead>
@@ -141,7 +141,7 @@
                             <tr>
                                 <td>{{ $hikerType->id }}</td>
                                 <td>{{ $hikerType->name }}</td>
-                                <td>{{ $hikerType->created_at }}</td>
+                                <td>{{ $hikerType->created_at->format('d.m.Y H:i:s') }}</td>
                                 <td>{{ $hikerType->updated_at->diffForHumans() }}</td>
                             </tr>
                         @endforeach

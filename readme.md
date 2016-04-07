@@ -1,5 +1,26 @@
 # Laravel PHP Framework
 
+## Hobby Planinsko društvo 
+
+* Laravel projekt 
+* testna baza podatkov je v mapi podatki 
+* ko nalagaš projekt z github moraš narediti composer install 
+* obvezno ustvari .env datoteko - kopiraj .env-exammple. poravi podatke o bazi da bo delovalo na tvojem localhostu
+* obvezno generiraj secret_key 
+
+* izdelano na Laravel ogrodju - virtualka homestead. 
+
+## Aplikacija 
+
+Aplikacija omogoča 
+* dodajanje članov pd
+* dodajanje podatkov o hirbih
+* organizacijo izleto 
+* prijave na izlete
+* pregled prijavljenih na izlet ...
+
+**Še vedno v razvuju se nadaljuje **
+
 [![Build Status](https://travis-ci.org/laravel/framework.svg)](https://travis-ci.org/laravel/framework)
 [![Total Downloads](https://poser.pugx.org/laravel/framework/d/total.svg)](https://packagist.org/packages/laravel/framework)
 [![Latest Stable Version](https://poser.pugx.org/laravel/framework/v/stable.svg)](https://packagist.org/packages/laravel/framework)

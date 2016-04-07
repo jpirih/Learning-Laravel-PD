@@ -32,7 +32,7 @@
                     <div class="form-group">
                         <label for="end" class="col-sm-4 control-label">Konec datum in ura</label>
                         <div class="col-sm-8">
-                            <input type="datetime-local" name="end" id="end" class="form-control">
+                            <input type=datetime-local name="end" id="end" class="form-control">
                         </div>
                     </div>
                     <div class="form-group">
@@ -73,4 +73,6 @@
             </div>
         </div>
     </div>
+
+    <
 @endsection

@@ -32,35 +32,27 @@
                         </p>
                     </div>
                 @else
-                    <table class="table table-responsive table-bordered table-striped">
-                        <thead>
-                        <tr class="glava">
-                            <th>Hrib</th>
-                            <th>Vodnik</th>
-                            <th>Datum izleta</th>
-                            <th>Prijava</th>
-                        </tr>
-                        </thead>
-                        <tbody class="bg-info table-striped">
-                            @foreach($hikes as $hike)
-                                <tr>
-                                    <td><a href="{{ route('about_hike', ['id' => $hike->id]) }}">{{ $hike->name }}</a></td>
-                                    <td>
-                                        {{ $hike->guide->name }} {{$hike->guide->surname}}
-                                    </td>
-                                    @foreach($events as $event)
-                                        <td>{{ $event->start }}</td>
-                                        <td><a href="{{route('event_signup', ['id' => $hike->id])}}" class="btn btn-primary">
-                                            Prijava
-                                        </a>
-                                    </td>
-                                    @endforeach
-                                    <td><span class="glyphicon glyphicon-info-sign"></span> Trenutno ni organiziranega izleta</td>
-                                    <td> Prijava ni mogoča</td>
-                                </tr>
-                            @endforeach
-                        </tbody>
-                    </table>
+                    @foreach($hikes as $hike)
+                        <div class="media">
+                            <div class="media-left">
+                                <a href="{{ route('about_hike', ['id' => $hike->id]) }}">
+                                    <img class="media-object img-rounded img-thumbnail" width="150" height="150" src="{{ $hike->img_url }}" alt="hrib_slikca">
+                                </a>
+                            </div>
+                            <div class="media-body">
+                                <a href="{{ route('about_hike', ['id' => $hike->id]) }}" class="media-heading"><h4>{{ $hike->name }}</h4></a>
+                                <p>
+                                    <sapn class="krepko">Nadmorska višina: </sapn> {{ $hike->altitude }} metrov
+                                </p>
+                                <p>
+                                    <span class="krepko">Zahtevnost: </span> {{ $hike->difficulty->name }}
+                                </p>
+                                <p>
+                                    <span class="krepko">Opis</span> {{ $hike->description }}}
+                                </p>
+                            </div>
+                        </div>
+                    @endforeach
                 @endif
             </div>
         </div>

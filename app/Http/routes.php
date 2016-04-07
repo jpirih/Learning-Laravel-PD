@@ -24,7 +24,7 @@
 
 Route::group(['middleware' => ['web']], function () {
     Route::auth();
-    Route::get('/', ['uses' => 'HomeController@index']);
+    Route::get('/', ['uses' => 'HomeController@index', 'as' => 'home']);
     Route::get('hikes', ['uses' => 'HomeController@hikes', 'as' => 'hikes']);
     Route::get('about', ['uses' => 'HomeController@about', 'as' => 'about']);
     Route::get('hike/{id}/about', ['uses' => 'HomeController@hikeDetails', 'as' => 'about_hike']);
@@ -41,7 +41,8 @@ Route::group(['middleware' => ['web']], function () {
     Route::post('crete/difficulty-category', ['uses' => 'HikesController@saveDifficulty', 'as' => 'create_difficulty']);
     Route::get('create/hike-event', ['uses' => 'HikesController@createHikeEvent', 'as' => 'create_event']);
     Route::post('create/hike-event', ['uses' => 'HikesController@saveHikeEvent']);
-    Route::get('hike/{id}/sign-up', ['uses' => 'HikesController@eventSignUp', 'as' => 'event_signup']);
-    Route::post('hike/{id}/sign-up', ['uses' => 'HikesController@saveEventSignup']);
+    Route::get('hike/{id}/sign-up', ['uses' => 'EventsController@eventSignUp', 'as' => 'event_signup']);
+    Route::post('hike/{id}/sign-up', ['uses' => 'EventsController@saveEventSignup']);
+    Route::get('events/{id}', ['uses' => 'HikesController@eventDetails', 'as' => 'event_details']);
 });
 

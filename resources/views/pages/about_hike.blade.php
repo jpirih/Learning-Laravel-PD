@@ -34,8 +34,8 @@
                                 <td>{{ $hike->name }}</td>
                                 <td>{{ $hike->altitude }}</td>
                                 <td>{{ $hike->difficulty->name }}</td>
-                                <td>{{ $hike->open_form }}</td>
-                                <td>{{ $hike->open_to }}</td>
+                                <td>{{ $hike->open_form->format('d. m') }}</td>
+                                <td>{{ $hike->open_to->format('d. m') }}</td>
                                 <td>{{ $hike->guide->name }} {{ $hike->guide->surname }}</td>
                             </tr>
                         </tbody>
@@ -43,7 +43,7 @@
                 </div>
                 <p>
                     <span class="img">
-                        <img src="{{$hike->img_url}}" alt="{{$hike->name}}" class=" img img-responsive" width="640" height="480">
+                        <img src="{{$hike->img_url}}" alt="{{$hike->name}}" class=" img img-responsive img-rounded" width="640" height="480">
                     </span>
                 </p>
 

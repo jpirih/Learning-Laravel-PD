@@ -7,6 +7,7 @@ use App\HikerType;
 use App\Http\Controllers\Controller;
 use App\Http\Requests\SaveHikerRequest;
 use App\Http\Requests\SaveHikerType;
+use Carbon\Carbon;
 use Illuminate\Support\Facades\Request;
 
 class HikerController extends Controller
@@ -17,14 +18,22 @@ class HikerController extends Controller
     }
 
     //hiker  management page
-    public function hikerPanel(){
+    public function hikerPanel()
+    {
+        Carbon::setLocale('sl');
         $hikerTypes = HikerType::all();
         $hikers = Hiker::all();
+
+        foreach ($hikers as $hiker)
+        {
+            $hiker->birth_date = Carbon::createFromTimestamp(strtotime($hiker->birth_date));
+        }
         return view('pages.hiker_management', ['hikerTypes' => $hikerTypes, 'hikers' => $hikers]);
     }
 
     // save new hiker type
-    public function saveHikerType(SaveHikerType $request){
+    public function saveHikerType(SaveHikerType $request)
+    {
         $hikerType = new HikerType;
 
         $name = $request->get('name');

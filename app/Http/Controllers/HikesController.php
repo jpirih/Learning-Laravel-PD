@@ -37,6 +37,20 @@ class HikesController extends Controller
         $difficulties = Difficulty::all();
         $events = Event::where('start', '>=', $td)->get();
         $allEvents = Event::all();
+        $allEvents = $allEvents->sortBy('start');
+        
+        foreach ($events as $event)
+        {
+            $event->start = Carbon::createFromTimestamp(strtotime($event->start));
+            $event->end = Carbon::createFromTimestamp(strtotime($event->end));
+        }
+
+        foreach ($allEvents as $event)
+        {
+            $event->start = Carbon::createFromTimestamp(strtotime($event->start));
+            $event->end = Carbon::createFromTimestamp(strtotime($event->end));
+        }
+        
         return view('pages.hike_management', ['hikes' => $hikes, 'difficulties' => $difficulties, 'events' => $events, 'allEvents' => $allEvents]);
     }
     // add new hike
@@ -74,7 +88,8 @@ class HikesController extends Controller
     }
     
     // hike diffieculty
-    public function saveDifficulty(SaveDifficultyRequest $request){
+    public function saveDifficulty(SaveDifficultyRequest $request)
+    {
         $difficulty = new Difficulty();
         $label = $request->get('label');
         $name = $request->get('name');
@@ -86,6 +101,7 @@ class HikesController extends Controller
 
         return redirect(route('hike_panel'));
     }
+
     // organize new hike event
     public function createHikeEvent(){
         $hikes = Hike::all();
@@ -101,7 +117,6 @@ class HikesController extends Controller
         $info = $request->get('info');
 
         $event->hike_id = $hike[0];
-        $event->start = $start;
         $event->end = $end;
         $event->price = $price;
         $event->info = $info;
@@ -109,29 +124,27 @@ class HikesController extends Controller
 
         return redirect(route('hike_panel'));
     }
-    // event signup fnction
-    public function eventSignUp($id){
-        $hike = Hike::find($id);
-        $event = Event::where('hike_id' ,'=',$id)->get()->first();
-        return view('pages.event_signup', ['hike' => $hike, 'event' => $event]);
+    
+    
+    // event details 
+    public  function  eventDetails($id)
+    {
+        // podatki o izletu iz baze
+        $event = Event::find($id);
+        //seznam planincev na tem izletu  prijavljeni na izlet 
+        $participants = Event::find($id)->hikers()->get();
+        
+        $event->start = Carbon::createFromTimestamp(strtotime($event->start));
+        $event->end = Carbon::createFromTimestamp(strtotime($event->end));
+        
+        foreach ($participants as $participant)
+        {
+            $participant->birth_date = Carbon::createFromTimestamp(strtotime($participant->birth_date));
+        }
+        
+        return view('pages.event_details', ['event'=> $event, 'participants' => $participants]);
     }
 
-    public function saveEventSignup( SaveHikerRequest $request, $hike_id){
-        $event= Event::where('hike_id', '=', $hike_id)->get()->first();
-        $hiker = new Hiker;
-        
-        $hiker->hiker_type_id = 1;
-        $hiker->name = $request->get('name');
-        $hiker->surname = $request->get('surname');
-        $hiker->email = $request->get('email');
-        $hiker->phone = $request->get('phone');
-        $hiker->birth_date = $request->get('birth_date');
-        $hiker->save();
-        
-        $event->hikers()->attach($hiker->id);
-        return redirect(route('hikes'))->with('status','Hvala za prijavo na izlet '.$event->hike->name.'!');
-        
+   
 
-
-    }
 }

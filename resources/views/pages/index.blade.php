@@ -7,10 +7,21 @@
 
 
 @section('content')
-    <div class="contairner">
+    <div class="container">
         @section('page-heading')
             Dobrodošli na spletni strani Hobby PD!
-        @endsection()
+        @endsection
+
+        @if(session('status'))
+                <div class="row">
+                    <col-sm-6 class="col-sm-offset-3">
+                        <div class="alert alert-success">
+                            <span class="glyphicon glyphicon-check"></span>
+                            {{ session('status') }}
+                        </div>
+                    </col-sm-6>
+                </div>
+        @endif
 
         <div class="row">
             <div class="col-sm-6 col-sm-offset-3">
@@ -22,14 +33,15 @@
                                 <p>
                                     <span class="vabilo">Pohod</span>: Zbiramo prijave za pohod na
                                     <span class="vabilo">{{ $event->hike->name }}:</span>,
-                                     Ki bo dne <span class="vabilo">{{$event->start}}</span> {{ $event->info }}
+                                     Ki bo dne <span class="vabilo">{{$event->start->format('d.m.y  H:i')}}</span> {{ $event->info }}
                                 </p>
                                 <p>
                                     Prijavi se tukaj
-                                    <a href="{{route('event_signup', ['id' => $event->hike->id])}}" class="btn btn-primary">
+                                    <a href="{{route('event_signup', ['id' => $event->id])}}" class="btn btn-primary">
                                         Prijava
                                     </a>
                                 </p>
+                                <hr>
                             @endforeach
                         </div>
                     </div>

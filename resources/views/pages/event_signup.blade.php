@@ -1,11 +1,11 @@
 @extends('base')
 
 @section('title')
-    Prijava na izlet {{ $hike->name }}
+    Prijava na izlet {{ $event->hike->name}}
 @endsection
 
 @section('page-heading')
-    Prijava za izlet {{ $hike->name }}
+    Prijava za izlet {{ $event->hike->name}}
 @endsection
 
 @section('content')
@@ -13,19 +13,22 @@
         <div class="row">
             <div class="col-sm-6 col-sm-offset-3">
                 <div class="well">
+                    <p>
+                        <span class="krepko">izlet id:</span> {{ $event->id }}
+                    </p>
 
                     <p>
-                        <span class="krepko">Odhod:</span> {{ $event->start }}
+                        <span class="krepko">Odhod:</span> {{ $event->start->format('d.m.y H:i') }}
                     </p>
                     <p>
-                        <span class="krepko">Prihod:</span> {{ $event->end }}
+                        <span class="krepko">Prihod:</span> {{ $event->end->format('d.m.y H:i') }}
                     </p>
                     <p>
                         <span class="krepko">Info:</span> {{ $event->info }}
                     </p>
 
                     <p>
-                        <span class="krepko">Vodnik:</span> {{ $hike->guide->name }} {{ $hike->guide->surname }}
+                        <span class="krepko">Vodnik:</span> {{ $event->hike->guide->name }} {{ $event->hike->guide->surname }}
                     </p>
                 </div>
             </div>

@@ -16,8 +16,16 @@ class HomeController extends Controller
      * @return void
      */
 
-    public function index(){
+    public function index()
+    {
+        Carbon::setLocale('sl');
         $events = Event::where('start','>',Carbon::now('Europe/Ljubljana'))->get();
+        foreach ($events as $event)
+        {
+            $event->start = Carbon::createFromTimestamp(strtotime($event->start));
+        }
+        $events= $events->sortBy('start');
+
         return view('pages.index', ['events' => $events]);
     }
     public function hikes(){
@@ -27,8 +35,14 @@ class HomeController extends Controller
     }
 
     // all you need to know about  hike
-    public function hikeDetails($id){
+    public function hikeDetails($id)
+    {
+        $dt = new Carbon();
+        $dt->setLocale('sl');
         $hike = Hike::find($id);
+        $hike->open_form = $dt->createFromTimestamp(strtotime($hike->open_form));
+        $hike->open_to = $dt->createFromTimestamp(strtotime($hike->open_to));
+       
         return view('pages.about_hike', ['hike' => $hike]);
     }
     public function about(){

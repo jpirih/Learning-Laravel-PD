@@ -88,11 +88,15 @@
                         <tbody class="bg-info table-striped">
                             @foreach($allEvents as $event)
                                 <tr>
-                                    <td>{{ $event->start }}</td>
-                                    <td>{{ $event->end }}</td>
-                                    <td>{{ $event->hike->name }}</td>
+                                    <td>{{ $event->start->format('d.m.y H:i') }}</td>
+                                    <td>{{ $event->end->format('d.m.y H:i') }}</td>
+                                    <td>{{ $event->hike->name}}</td>
                                     <td>{{ $event->price }}</td>
-                                    <td><a href="#" class="btn btn-primary">Info</a></td>
+                                    <td>
+                                        <a href="{{ route('event_details', ['id' => $event->id]) }}" class="btn btn-primary">
+                                            <span class="glyphicon glyphicon-info-sign"></span> Info
+                                        </a>
+                                    </td>
                                 </tr>
                             @endforeach
                         </tbody>
@@ -130,7 +134,7 @@
                                     @foreach($events as $event)
                                         <tr>
                                             <th>{{ $event->hike->name}}</th>
-                                            <th>{{ $event->start }}</th>
+                                            <th>{{ $event->start->format('d.m.y H:i') }}</th>
                                         </tr>
                                     @endforeach
                                 </tbody>
