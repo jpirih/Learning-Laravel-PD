@@ -117,6 +117,7 @@ class HikesController extends Controller
         $info = $request->get('info');
 
         $event->hike_id = $hike[0];
+        $event->start = $start;
         $event->end = $end;
         $event->price = $price;
         $event->info = $info;
