@@ -17,7 +17,7 @@ class DashboardController extends Controller
 
     // dashboard main page
     public function dashboard(){
-        return view('pages.dashboard');
+        return redirect(route('hike_panel'));
     }
     
     

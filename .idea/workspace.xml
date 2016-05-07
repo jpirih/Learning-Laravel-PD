@@ -6,23 +6,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="be09e638-8c84-46d8-b368-59d473b373fd" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/views/pages/event_details.blade.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Controllers/HikerController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/HikerController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Controllers/HikesController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/HikesController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/routes.php" afterPath="$PROJECT_DIR$/app/Http/routes.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/app.php" afterPath="$PROJECT_DIR$/config/app.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/theme.css" afterPath="$PROJECT_DIR$/public/css/theme.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/readme.md" afterPath="$PROJECT_DIR$/readme.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/base.blade.php" afterPath="$PROJECT_DIR$/resources/views/base.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/pages/about_hike.blade.php" afterPath="$PROJECT_DIR$/resources/views/pages/about_hike.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/pages/create_event.blade.php" afterPath="$PROJECT_DIR$/resources/views/pages/create_event.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/pages/event_signup.blade.php" afterPath="$PROJECT_DIR$/resources/views/pages/event_signup.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/pages/hike_management.blade.php" afterPath="$PROJECT_DIR$/resources/views/pages/hike_management.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/pages/hiker_management.blade.php" afterPath="$PROJECT_DIR$/resources/views/pages/hiker_management.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/pages/hikes.blade.php" afterPath="$PROJECT_DIR$/resources/views/pages/hikes.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/pages/index.blade.php" afterPath="$PROJECT_DIR$/resources/views/pages/index.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Controllers/DashboardController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/DashboardController.php" />
     </list>
     <ignored path="Pohod.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -47,8 +32,28 @@
       <file leaf-file-name="base.blade.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/views/base.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="552">
-              <caret line="62" column="0" selection-start-line="62" selection-start-column="0" selection-end-line="62" selection-end-column="0" />
+            <state relative-caret-position="935">
+              <caret line="55" column="0" selection-start-line="55" selection-start-column="0" selection-end-line="55" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".env" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/.env">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="170">
+              <caret line="10" column="17" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DashboardController.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/DashboardController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="19" column="45" selection-start-line="19" selection-start-column="45" selection-end-line="19" selection-end-column="45" />
               <folding />
             </state>
           </provider>
@@ -57,8 +62,8 @@
       <file leaf-file-name="event_signup.blade.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/views/pages/event_signup.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="462">
-              <caret line="27" column="24" selection-start-line="27" selection-start-column="24" selection-end-line="27" selection-end-column="24" />
+            <state relative-caret-position="-32">
+              <caret line="48" column="80" selection-start-line="48" selection-start-column="80" selection-end-line="48" selection-end-column="80" />
               <folding />
             </state>
           </provider>
@@ -67,7 +72,7 @@
       <file leaf-file-name="HikesController.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/HikesController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1678">
+            <state relative-caret-position="17">
               <caret line="34" column="31" selection-start-line="34" selection-start-column="31" selection-end-line="34" selection-end-column="31" />
               <folding>
                 <element signature="e#40#59#0#PHP" expanded="true" />
@@ -76,15 +81,22 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="119">
+              <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="readme.md" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/readme.md">
-          <provider editor-type-id="MultiMarkdownFxPreviewEditor">
-            <state />
-          </provider>
-          <provider selected="true" editor-type-id="split-provider[text-editor;MultiMarkdownPreviewEditor]">
-            <state split_layout="FIRST">
-              <first_editor relative-caret-position="462">
-                <caret line="21" column="34" selection-start-line="21" selection-start-column="34" selection-end-line="21" selection-end-column="34" />
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="420">
+                <caret line="48" column="4" selection-start-line="48" selection-start-column="3" selection-end-line="48" selection-end-column="4" />
                 <folding />
               </first_editor>
               <second_editor />
@@ -95,8 +107,8 @@
       <file leaf-file-name="event_details.blade.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/views/pages/event_details.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="594">
-              <caret line="27" column="124" selection-start-line="27" selection-start-column="124" selection-end-line="27" selection-end-column="124" />
+            <state relative-caret-position="-102">
+              <caret line="24" column="10" selection-start-line="24" selection-start-column="10" selection-end-line="24" selection-end-column="10" />
               <folding />
             </state>
           </provider>
@@ -105,30 +117,8 @@
       <file leaf-file-name="theme.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/css/theme.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="176">
-              <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="EventsController.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/EventsController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="704">
-              <caret line="47" column="12" selection-start-line="47" selection-start-column="12" selection-end-line="47" selection-end-column="12" />
-              <folding>
-                <element signature="e#40#54#0#PHP" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="hike_management.blade.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/views/pages/hike_management.blade.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1741">
-              <caret line="99" column="37" selection-start-line="99" selection-start-column="37" selection-end-line="99" selection-end-column="37" />
+            <state relative-caret-position="68">
+              <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -137,9 +127,11 @@
       <file leaf-file-name="routes.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Http/routes.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="258">
-              <caret line="29" column="88" selection-start-line="29" selection-start-column="84" selection-end-line="29" selection-end-column="94" />
-              <folding />
+            <state relative-caret-position="374">
+              <caret line="37" column="103" selection-start-line="37" selection-start-column="93" selection-end-line="37" selection-end-column="103" />
+              <folding>
+                <marker date="1462605533083" expanded="false" signature="9:88" placeholder="..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -159,7 +151,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/resources/views/pages/hiker_types.blade.php" />
         <option value="$PROJECT_DIR$/app/Difficulty.php" />
         <option value="$PROJECT_DIR$/database/migrations/2016_03_06_175410_create_dificulty_table.php" />
         <option value="$PROJECT_DIR$/resources/views/pages/add_hike.balde.php" />
@@ -180,7 +171,6 @@
         <option value="$PROJECT_DIR$/resources/views/pages/add_hike.blade.php" />
         <option value="$PROJECT_DIR$/app/Http/Requests/SaveEventRequest.php" />
         <option value="$PROJECT_DIR$/resources/views/pages/add_hiker.blade.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/DashboardController.php" />
         <option value="$PROJECT_DIR$/resources/lang/sl/auth.php" />
         <option value="$PROJECT_DIR$/resources/lang/sl/pagination.php" />
         <option value="$PROJECT_DIR$/resources/lang/sl/passwords.php" />
@@ -210,11 +200,13 @@
         <option value="$PROJECT_DIR$/resources/views/pages/event_details.blade.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/HikesController.php" />
         <option value="$PROJECT_DIR$/readme.md" />
+        <option value="$PROJECT_DIR$/.env" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/DashboardController.php" />
       </list>
     </option>
   </component>
-  <component name="JsBuildToolGruntFileManager" detection-done="true" />
-  <component name="JsBuildToolPackageJson" detection-done="true" />
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
   <component name="JsGulpfileManager">
     <detection-done>true</detection-done>
     <gulpfiles>
@@ -222,6 +214,7 @@
         <gulpfile-path>$PROJECT_DIR$/gulpfile.js</gulpfile-path>
       </GulpfileState>
     </gulpfiles>
+    <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="PhpServers">
     <servers />
@@ -230,8 +223,8 @@
   <component name="ProjectFrameBounds">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
-    <option name="width" value="1696" />
-    <option name="height" value="1026" />
+    <option name="width" value="1382" />
+    <option name="height" value="744" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -302,6 +295,34 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Pohod" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Pohod" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bootstrap" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Pohod" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Pohod" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
       <pane id="Scope" />
@@ -311,20 +332,20 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../Trgovina" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
-    <property name="SearchEverywhereHistoryKey" value="event&#9;FILE&#9;file://E:/Learning/Php/Laravel/Pohod/app/Event.php&#10;the&#9;FILE&#9;file://E:/Learning/Php/Laravel/Pohod/public/css/theme.css&#10;rou&#9;FILE&#9;file://E:/Learning/Php/Laravel/Pohod/app/Http/routes.php&#10;base&#9;FILE&#9;file://E:/Learning/Php/Laravel/Pohod/resources/views/base.blade.php&#10;inde&#9;FILE&#9;file://E:/Learning/Php/Laravel/Pohod/resources/views/pages/index.blade.php&#10;route&#9;FILE&#9;file://E:/Learning/Php/Laravel/Pohod/app/Http/routes.php&#10;eve&#9;FILE&#9;file://E:/Learning/Php/Laravel/Pohod/app/Http/Controllers/EventsController.php&#10;ind&#9;FILE&#9;file://E:/Learning/Php/Laravel/Pohod/resources/views/pages/index.blade.php&#10;hi&#9;FILE&#9;file://E:/Learning/Php/Laravel/Pohod/resources/views/pages/hike_management.blade.php&#10;Hike&#9;FILE&#9;file://E:/Learning/Php/Laravel/Pohod/app/Hike.php&#10;rout&#9;FILE&#9;file://E:/Learning/Php/Laravel/Pohod/app/Http/routes.php&#10;hikes&#9;FILE&#9;file://E:/Learning/Php/Laravel/Pohod/resources/views/pages/hikes.blade.php&#10;Hom&#9;FILE&#9;file://E:/Learning/Php/Laravel/Pohod/app/Http/Controllers/HomeController.php&#10;abou&#9;FILE&#9;file://E:/Learning/Php/Laravel/Pohod/resources/views/pages/about_hike.blade.php&#10;hiker&#9;FILE&#9;file://E:/Learning/Php/Laravel/Pohod/resources/views/pages/hiker_management.blade.php&#10;Hiker&#9;FILE&#9;file://E:/Learning/Php/Laravel/Pohod/app/Http/Controllers/HikerController.php&#10;Au&#9;FILE&#9;file://E:/Learning/Php/Laravel/Pohod/app/Http/Controllers/Auth/AuthController.php&#10;Auth&#9;FILE&#9;file://E:/Learning/Php/Laravel/Pohod/config/auth.php&#10;hike&#9;FILE&#9;file://E:/Learning/Php/Laravel/Pohod/resources/views/pages/about_hike.blade.php&#10;Event&#9;FILE&#9;file://E:/Learning/Php/Laravel/Pohod/app/Event.php&#10;theme&#9;FILE&#9;file://E:/Learning/Php/Laravel/Pohod/public/css/theme.css&#10;Hi&#9;FILE&#9;file://E:/Learning/Php/Laravel/Pohod/app/Http/Controllers/HikesController.php&#10;HOme&#9;FILE&#9;file://E:/Learning/Php/Laravel/Pohod/app/Http/Controllers/HomeController.php&#10;Hikes&#9;FILE&#9;file://E:/Learning/Php/Laravel/Pohod/app/Http/Controllers/HikesController.php&#10;Ho&#9;FILE&#9;file://E:/Learning/Php/Laravel/Pohod/app/Http/Controllers/HomeController.php&#10;hike_mana&#9;FILE&#9;file://E:/Learning/Php/Laravel/Pohod/resources/views/pages/hike_management.blade.php&#10;add_hi&#9;FILE&#9;file://E:/Learning/Php/Laravel/Pohod/resources/views/pages/add_hiker.blade.php&#10;Save&#9;null&#9;null&#10;hiker_mana&#9;FILE&#9;file://E:/Learning/Php/Laravel/Pohod/resources/views/pages/hiker_management.blade.php&#10;HikerCo&#9;FILE&#9;file://E:/Learning/Php/Laravel/Pohod/app/Http/Controllers/HikerController.php&#10;add&#9;FILE&#9;file://E:/Learning/Php/Laravel/Pohod/resources/views/pages/add_hiker.blade.php&#10;create_hikers_ta&#9;FILE&#9;file://E:/Learning/Php/Laravel/Pohod/database/migrations/2016_03_02_110528_create_hikers_table.php&#10;create_hike&#9;FILE&#9;file://E:/Learning/Php/Laravel/Pohod/database/migrations/2016_03_08_151323_create_events_hikers_table.php&#10;hike_man&#9;FILE&#9;file://E:/Learning/Php/Laravel/Pohod/resources/views/pages/hike_management.blade.php&#10;hike_ma&#9;FILE&#9;file://E:/Learning/Php/Laravel/Pohod/resources/views/pages/hiker_management.blade.php&#10;HO&#9;FILE&#9;file://C:/Users/JankoHP/Code/Pohod/app/Http/Controllers/HomeController.php&#10;ro&#9;FILE&#9;file://C:/Users/JankoHP/Code/Pohod/app/Http/routes.php&#10;da&#9;FILE&#9;file://C:/Users/JankoHP/Code/Pohod/resources/views/pages/dashboard.blade.php&#10;them&#9;FILE&#9;file://C:/Users/JankoHP/Code/Pohod/public/css/theme.css&#10;in&#9;FILE&#9;file://C:/Users/JankoHP/Code/Pohod/resources/views/pages/index.blade.php&#10;sez&#9;FILE&#9;file://C:/Users/JankoHP/Code/Pohod/resources/views/pages/seznam_prijavljenih.blade.php&#10;pri&#9;FILE&#9;file://C:/Users/JankoHP/Code/Pohod/resources/views/pages/prijava.blade.php&#10;prija&#9;FILE&#9;file://C:/Users/JankoHP/Code/Pohod/resources/views/pages/prijava.blade.php&#10;create&#9;FILE&#9;file://C:/Users/JankoHP/Code/Pohod/database/migrations/2016_03_02_110528_create_hikers_table.php&#10;D&#9;FILE&#9;file://C:/Users/JankoHP/Code/Pohod/app/Http/Controllers/DashboardController.php&#10;Dash&#9;FILE&#9;file://C:/Users/JankoHP/Code/Pohod/app/Http/Controllers/DashboardController.php&#10;HIkes&#9;FILE&#9;file://C:/Users/JankoHP/Code/Pohod/app/Http/Controllers/HikesController.php" />
+    <property name="SearchEverywhereHistoryKey" value="dash&#9;FILE&#9;file://C:/Users/JankoHP/Code/Pohod/app/Http/Controllers/DashboardController.php&#10;rout&#9;FILE&#9;file://C:/Users/JankoHP/Code/Pohod/app/Http/routes.php&#10;Das&#9;FILE&#9;file://C:/Users/JankoHP/Code/Pohod/app/Http/Controllers/DashboardController.php&#10;event&#9;FILE&#9;file://E:/Learning/Php/Laravel/Pohod/app/Event.php&#10;the&#9;FILE&#9;file://E:/Learning/Php/Laravel/Pohod/public/css/theme.css&#10;rou&#9;FILE&#9;file://E:/Learning/Php/Laravel/Pohod/app/Http/routes.php&#10;base&#9;FILE&#9;file://E:/Learning/Php/Laravel/Pohod/resources/views/base.blade.php&#10;inde&#9;FILE&#9;file://E:/Learning/Php/Laravel/Pohod/resources/views/pages/index.blade.php&#10;route&#9;FILE&#9;file://E:/Learning/Php/Laravel/Pohod/app/Http/routes.php&#10;eve&#9;FILE&#9;file://E:/Learning/Php/Laravel/Pohod/app/Http/Controllers/EventsController.php&#10;ind&#9;FILE&#9;file://E:/Learning/Php/Laravel/Pohod/resources/views/pages/index.blade.php&#10;hi&#9;FILE&#9;file://E:/Learning/Php/Laravel/Pohod/resources/views/pages/hike_management.blade.php&#10;Hike&#9;FILE&#9;file://E:/Learning/Php/Laravel/Pohod/app/Hike.php&#10;hikes&#9;FILE&#9;file://E:/Learning/Php/Laravel/Pohod/resources/views/pages/hikes.blade.php&#10;Hom&#9;FILE&#9;file://E:/Learning/Php/Laravel/Pohod/app/Http/Controllers/HomeController.php&#10;abou&#9;FILE&#9;file://E:/Learning/Php/Laravel/Pohod/resources/views/pages/about_hike.blade.php&#10;hiker&#9;FILE&#9;file://E:/Learning/Php/Laravel/Pohod/resources/views/pages/hiker_management.blade.php&#10;Hiker&#9;FILE&#9;file://E:/Learning/Php/Laravel/Pohod/app/Http/Controllers/HikerController.php&#10;Au&#9;FILE&#9;file://E:/Learning/Php/Laravel/Pohod/app/Http/Controllers/Auth/AuthController.php&#10;Auth&#9;FILE&#9;file://E:/Learning/Php/Laravel/Pohod/config/auth.php&#10;hike&#9;FILE&#9;file://E:/Learning/Php/Laravel/Pohod/resources/views/pages/about_hike.blade.php&#10;Event&#9;FILE&#9;file://E:/Learning/Php/Laravel/Pohod/app/Event.php&#10;theme&#9;FILE&#9;file://E:/Learning/Php/Laravel/Pohod/public/css/theme.css&#10;Hi&#9;FILE&#9;file://E:/Learning/Php/Laravel/Pohod/app/Http/Controllers/HikesController.php&#10;HOme&#9;FILE&#9;file://E:/Learning/Php/Laravel/Pohod/app/Http/Controllers/HomeController.php&#10;Hikes&#9;FILE&#9;file://E:/Learning/Php/Laravel/Pohod/app/Http/Controllers/HikesController.php&#10;Ho&#9;FILE&#9;file://E:/Learning/Php/Laravel/Pohod/app/Http/Controllers/HomeController.php&#10;hike_mana&#9;FILE&#9;file://E:/Learning/Php/Laravel/Pohod/resources/views/pages/hike_management.blade.php&#10;add_hi&#9;FILE&#9;file://E:/Learning/Php/Laravel/Pohod/resources/views/pages/add_hiker.blade.php&#10;Save&#9;null&#9;null&#10;hiker_mana&#9;FILE&#9;file://E:/Learning/Php/Laravel/Pohod/resources/views/pages/hiker_management.blade.php&#10;HikerCo&#9;FILE&#9;file://E:/Learning/Php/Laravel/Pohod/app/Http/Controllers/HikerController.php&#10;add&#9;FILE&#9;file://E:/Learning/Php/Laravel/Pohod/resources/views/pages/add_hiker.blade.php&#10;create_hikers_ta&#9;FILE&#9;file://E:/Learning/Php/Laravel/Pohod/database/migrations/2016_03_02_110528_create_hikers_table.php&#10;create_hike&#9;FILE&#9;file://E:/Learning/Php/Laravel/Pohod/database/migrations/2016_03_08_151323_create_events_hikers_table.php&#10;hike_man&#9;FILE&#9;file://E:/Learning/Php/Laravel/Pohod/resources/views/pages/hike_management.blade.php&#10;hike_ma&#9;FILE&#9;file://E:/Learning/Php/Laravel/Pohod/resources/views/pages/hiker_management.blade.php&#10;HO&#9;FILE&#9;file://C:/Users/JankoHP/Code/Pohod/app/Http/Controllers/HomeController.php&#10;ro&#9;FILE&#9;file://C:/Users/JankoHP/Code/Pohod/app/Http/routes.php&#10;da&#9;FILE&#9;file://C:/Users/JankoHP/Code/Pohod/resources/views/pages/dashboard.blade.php&#10;them&#9;FILE&#9;file://C:/Users/JankoHP/Code/Pohod/public/css/theme.css&#10;in&#9;FILE&#9;file://C:/Users/JankoHP/Code/Pohod/resources/views/pages/index.blade.php&#10;sez&#9;FILE&#9;file://C:/Users/JankoHP/Code/Pohod/resources/views/pages/seznam_prijavljenih.blade.php&#10;pri&#9;FILE&#9;file://C:/Users/JankoHP/Code/Pohod/resources/views/pages/prijava.blade.php&#10;prija&#9;FILE&#9;file://C:/Users/JankoHP/Code/Pohod/resources/views/pages/prijava.blade.php&#10;create&#9;FILE&#9;file://C:/Users/JankoHP/Code/Pohod/database/migrations/2016_03_02_110528_create_hikers_table.php&#10;D&#9;FILE&#9;file://C:/Users/JankoHP/Code/Pohod/app/Http/Controllers/DashboardController.php&#10;Dash&#9;FILE&#9;file://C:/Users/JankoHP/Code/Pohod/app/Http/Controllers/DashboardController.php&#10;HIkes&#9;FILE&#9;file://C:/Users/JankoHP/Code/Pohod/app/Http/Controllers/HikesController.php" />
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Font" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="js-jscs-nodeInterpreter" value="C:\Program Files\nodejs\node.exe" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="E:\Learning\Php\Laravel\Pohod\resources\lang" />
-      <recent name="C:\Users\JankoHP\Code\Pohod" />
-      <recent name="C:\Users\JankoHP\Code\Pohod\vendor" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\JankoHP\Code\Pohod\resources\assets" />
       <recent name="C:\Users\JankoHP\Code\Pohod\public" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\JankoHP\Code\Pohod" />
+      <recent name="E:\Learning\Php\Laravel\Pohod\resources\lang" />
+      <recent name="C:\Users\JankoHP\Code\Pohod\vendor" />
     </key>
   </component>
   <component name="RunManager">
@@ -379,18 +400,20 @@
       <workItem from="1459941233740" duration="13999000" />
       <workItem from="1459968622529" duration="939000" />
       <workItem from="1460008227969" duration="36848000" />
+      <workItem from="1462605692084" duration="535000" />
+      <workItem from="1462606344555" duration="1284000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="61375000" />
+    <option name="totallyTimeSpent" value="63194000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1696" height="1026" extended-state="6" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24022005" sideWeight="0.49563318" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24011713" sideWeight="0.49563318" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -454,13 +477,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/Http/Requests/SaveEventRequest.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="812">
-          <caret line="29" column="32" selection-start-line="29" selection-start-column="32" selection-end-line="29" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/database/migrations/2016_03_08_145839_create_events_table.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="448">
@@ -482,13 +498,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.env">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="15" column="19" selection-start-line="15" selection-start-column="19" selection-end-line="15" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/pages/seznam_prijavljenih.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="765">
@@ -500,13 +509,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/DashboardController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="23" column="1" selection-start-line="23" selection-start-column="1" selection-end-line="23" selection-end-column="1" />
         </state>
       </provider>
     </entry>
@@ -669,7 +671,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="396">
           <caret line="18" column="24" selection-start-line="18" selection-start-column="24" selection-end-line="18" selection-end-column="24" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -677,7 +678,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="127">
           <caret line="65" column="44" selection-start-line="65" selection-start-column="44" selection-end-line="65" selection-end-column="44" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -685,7 +685,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -693,7 +692,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="22">
           <caret line="34" column="54" selection-start-line="34" selection-start-column="54" selection-end-line="34" selection-end-column="54" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -701,7 +699,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="462">
           <caret line="54" column="22" selection-start-line="54" selection-start-column="22" selection-end-line="54" selection-end-column="22" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -709,7 +706,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="368">
           <caret line="28" column="92" selection-start-line="28" selection-start-column="92" selection-end-line="28" selection-end-column="92" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -725,7 +721,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="506">
           <caret line="23" column="64" selection-start-line="23" selection-start-column="64" selection-end-line="23" selection-end-column="64" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -741,17 +736,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="418">
           <caret line="31" column="28" selection-start-line="31" selection-start-column="28" selection-end-line="31" selection-end-column="28" />
-          <folding>
-            <element signature="e#40#54#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/pages/event_signup.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="462">
-          <caret line="27" column="24" selection-start-line="27" selection-start-column="24" selection-end-line="27" selection-end-column="24" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -759,15 +743,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="176">
           <caret line="8" column="19" selection-start-line="8" selection-start-column="19" selection-end-line="8" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/base.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="552">
-          <caret line="62" column="0" selection-start-line="62" selection-start-column="0" selection-end-line="62" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -775,38 +750,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="5" selection-start-line="0" selection-start-column="5" selection-end-line="0" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/routes.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="258">
-          <caret line="29" column="88" selection-start-line="29" selection-start-column="84" selection-end-line="29" selection-end-column="94" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/pages/hike_management.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1741">
+        <state relative-caret-position="1683">
           <caret line="99" column="37" selection-start-line="99" selection-start-column="37" selection-end-line="99" selection-end-column="37" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/pages/event_details.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="594">
-          <caret line="27" column="124" selection-start-line="27" selection-start-column="124" selection-end-line="27" selection-end-column="124" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/css/theme.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -815,15 +765,62 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="704">
           <caret line="47" column="12" selection-start-line="47" selection-start-column="12" selection-end-line="47" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/base.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="935">
+          <caret line="55" column="0" selection-start-line="55" selection-start-column="0" selection-end-line="55" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.env">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="17" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/routes.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="37" column="103" selection-start-line="37" selection-start-column="93" selection-end-line="37" selection-end-column="103" />
           <folding>
-            <element signature="e#40#54#0#PHP" expanded="true" />
+            <marker date="1462605533083" expanded="false" signature="9:88" placeholder="..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/DashboardController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="19" column="45" selection-start-line="19" selection-start-column="45" selection-end-line="19" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/css/theme.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/HikesController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1678">
+        <state relative-caret-position="17">
           <caret line="34" column="31" selection-start-line="34" selection-start-column="31" selection-end-line="34" selection-end-column="31" />
           <folding>
             <element signature="e#40#59#0#PHP" expanded="true" />
@@ -831,17 +828,36 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/readme.md">
-      <provider editor-type-id="MultiMarkdownFxPreviewEditor">
-        <state />
+    <entry file="file://$PROJECT_DIR$/resources/views/pages/event_signup.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-32">
+          <caret line="48" column="80" selection-start-line="48" selection-start-column="80" selection-end-line="48" selection-end-column="80" />
+          <folding />
+        </state>
       </provider>
-      <provider selected="true" editor-type-id="split-provider[text-editor;MultiMarkdownPreviewEditor]">
-        <state split_layout="FIRST">
-          <first_editor relative-caret-position="462">
-            <caret line="21" column="34" selection-start-line="21" selection-start-column="34" selection-end-line="21" selection-end-column="34" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/pages/event_details.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-102">
+          <caret line="24" column="10" selection-start-line="24" selection-start-column="10" selection-end-line="24" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/readme.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="420">
+            <caret line="48" column="4" selection-start-line="48" selection-start-column="3" selection-end-line="48" selection-end-column="4" />
             <folding />
           </first_editor>
           <second_editor />
+        </state>
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
