@@ -5,9 +5,7 @@
     <bookmark url="file://$PROJECT_DIR$/resources/views/pages/about_hike.blade.php" line="36" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="be09e638-8c84-46d8-b368-59d473b373fd" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Controllers/HikesController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/HikesController.php" />
-    </list>
+    <list default="true" id="be09e638-8c84-46d8-b368-59d473b373fd" name="Default" comment="" />
     <ignored path="Pohod.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path=".idea/dataSources.local.xml" />
@@ -18,7 +16,6 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
   </component>
@@ -31,7 +28,7 @@
       <file leaf-file-name="DashboardController.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/DashboardController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
+            <state relative-caret-position="495">
               <caret line="19" column="45" selection-start-line="19" selection-start-column="45" selection-end-line="19" selection-end-column="45" />
               <folding />
             </state>
@@ -41,17 +38,17 @@
       <file leaf-file-name="event_signup.blade.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/views/pages/event_signup.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-32">
+            <state relative-caret-position="1584">
               <caret line="48" column="80" selection-start-line="48" selection-start-column="80" selection-end-line="48" selection-end-column="80" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="HikesController.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="HikesController.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/HikesController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="442">
+            <state relative-caret-position="529">
               <caret line="119" column="31" selection-start-line="119" selection-start-column="31" selection-end-line="119" selection-end-column="31" />
               <folding>
                 <element signature="e#40#59#0#PHP" expanded="true" />
@@ -60,10 +57,20 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name=".env" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.env">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="240">
+              <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name=".gitignore" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
+            <state relative-caret-position="231">
               <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
               <folding />
             </state>
@@ -74,7 +81,7 @@
         <entry file="file://$PROJECT_DIR$/readme.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="233">
+              <first_editor relative-caret-position="1122">
                 <caret line="34" column="0" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
                 <folding />
               </first_editor>
@@ -86,7 +93,7 @@
       <file leaf-file-name="event_details.blade.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/views/pages/event_details.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
+            <state relative-caret-position="792">
               <caret line="24" column="10" selection-start-line="24" selection-start-column="10" selection-end-line="24" selection-end-column="10" />
               <folding />
             </state>
@@ -96,7 +103,7 @@
       <file leaf-file-name="create_event.blade.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/views/pages/create_event.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="612">
+            <state relative-caret-position="1188">
               <caret line="36" column="21" selection-start-line="36" selection-start-column="20" selection-end-line="36" selection-end-column="21" />
               <folding />
             </state>
@@ -106,7 +113,7 @@
       <file leaf-file-name="EventsController.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/EventsController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="529">
+            <state relative-caret-position="1320">
               <caret line="47" column="12" selection-start-line="47" selection-start-column="12" selection-end-line="47" selection-end-column="12" />
               <folding>
                 <element signature="e#40#54#0#PHP" expanded="true" />
@@ -118,21 +125,9 @@
       <file leaf-file-name="theme.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/css/theme.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
+            <state relative-caret-position="132">
               <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="routes.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Http/routes.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="37" column="103" selection-start-line="37" selection-start-column="93" selection-end-line="37" selection-end-column="103" />
-              <folding>
-                <marker date="1462605533083" expanded="false" signature="9:88" placeholder="..." />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -200,9 +195,9 @@
         <option value="$PROJECT_DIR$/public/css/theme.css" />
         <option value="$PROJECT_DIR$/resources/views/pages/event_details.blade.php" />
         <option value="$PROJECT_DIR$/readme.md" />
-        <option value="$PROJECT_DIR$/.env" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/DashboardController.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/HikesController.php" />
+        <option value="$PROJECT_DIR$/.env" />
       </list>
     </option>
   </component>
@@ -222,10 +217,10 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
-    <option name="width" value="1382" />
-    <option name="height" value="744" />
+    <option name="x" value="-14" />
+    <option name="y" value="-14" />
+    <option name="width" value="3868" />
+    <option name="height" value="2098" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -277,7 +272,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -380,11 +375,11 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Trgovina" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="SearchEverywhereHistoryKey" value="Hikes&#9;FILE&#9;file://C:/Users/JankoHP/Code/Pohod/app/Http/Controllers/HikesController.php&#10;Even&#9;FILE&#9;file://C:/Users/JankoHP/Code/Pohod/app/Http/Controllers/EventsController.php&#10;dash&#9;FILE&#9;file://C:/Users/JankoHP/Code/Pohod/app/Http/Controllers/DashboardController.php&#10;rout&#9;FILE&#9;file://C:/Users/JankoHP/Code/Pohod/app/Http/routes.php&#10;Das&#9;FILE&#9;file://C:/Users/JankoHP/Code/Pohod/app/Http/Controllers/DashboardController.php&#10;event&#9;FILE&#9;file://E:/Learning/Php/Laravel/Pohod/app/Event.php&#10;the&#9;FILE&#9;file://E:/Learning/Php/Laravel/Pohod/public/css/theme.css&#10;rou&#9;FILE&#9;file://E:/Learning/Php/Laravel/Pohod/app/Http/routes.php&#10;base&#9;FILE&#9;file://E:/Learning/Php/Laravel/Pohod/resources/views/base.blade.php&#10;inde&#9;FILE&#9;file://E:/Learning/Php/Laravel/Pohod/resources/views/pages/index.blade.php&#10;route&#9;FILE&#9;file://E:/Learning/Php/Laravel/Pohod/app/Http/routes.php&#10;eve&#9;FILE&#9;file://E:/Learning/Php/Laravel/Pohod/app/Http/Controllers/EventsController.php&#10;ind&#9;FILE&#9;file://E:/Learning/Php/Laravel/Pohod/resources/views/pages/index.blade.php&#10;hi&#9;FILE&#9;file://E:/Learning/Php/Laravel/Pohod/resources/views/pages/hike_management.blade.php&#10;Hike&#9;FILE&#9;file://E:/Learning/Php/Laravel/Pohod/app/Hike.php&#10;hikes&#9;FILE&#9;file://E:/Learning/Php/Laravel/Pohod/resources/views/pages/hikes.blade.php&#10;Hom&#9;FILE&#9;file://E:/Learning/Php/Laravel/Pohod/app/Http/Controllers/HomeController.php&#10;abou&#9;FILE&#9;file://E:/Learning/Php/Laravel/Pohod/resources/views/pages/about_hike.blade.php&#10;hiker&#9;FILE&#9;file://E:/Learning/Php/Laravel/Pohod/resources/views/pages/hiker_management.blade.php&#10;Hiker&#9;FILE&#9;file://E:/Learning/Php/Laravel/Pohod/app/Http/Controllers/HikerController.php&#10;Au&#9;FILE&#9;file://E:/Learning/Php/Laravel/Pohod/app/Http/Controllers/Auth/AuthController.php&#10;Auth&#9;FILE&#9;file://E:/Learning/Php/Laravel/Pohod/config/auth.php&#10;hike&#9;FILE&#9;file://E:/Learning/Php/Laravel/Pohod/resources/views/pages/about_hike.blade.php&#10;Event&#9;FILE&#9;file://E:/Learning/Php/Laravel/Pohod/app/Event.php&#10;theme&#9;FILE&#9;file://E:/Learning/Php/Laravel/Pohod/public/css/theme.css&#10;Hi&#9;FILE&#9;file://E:/Learning/Php/Laravel/Pohod/app/Http/Controllers/HikesController.php&#10;HOme&#9;FILE&#9;file://E:/Learning/Php/Laravel/Pohod/app/Http/Controllers/HomeController.php&#10;Ho&#9;FILE&#9;file://E:/Learning/Php/Laravel/Pohod/app/Http/Controllers/HomeController.php&#10;hike_mana&#9;FILE&#9;file://E:/Learning/Php/Laravel/Pohod/resources/views/pages/hike_management.blade.php&#10;add_hi&#9;FILE&#9;file://E:/Learning/Php/Laravel/Pohod/resources/views/pages/add_hiker.blade.php&#10;Save&#9;null&#9;null&#10;hiker_mana&#9;FILE&#9;file://E:/Learning/Php/Laravel/Pohod/resources/views/pages/hiker_management.blade.php&#10;HikerCo&#9;FILE&#9;file://E:/Learning/Php/Laravel/Pohod/app/Http/Controllers/HikerController.php&#10;add&#9;FILE&#9;file://E:/Learning/Php/Laravel/Pohod/resources/views/pages/add_hiker.blade.php&#10;create_hikers_ta&#9;FILE&#9;file://E:/Learning/Php/Laravel/Pohod/database/migrations/2016_03_02_110528_create_hikers_table.php&#10;create_hike&#9;FILE&#9;file://E:/Learning/Php/Laravel/Pohod/database/migrations/2016_03_08_151323_create_events_hikers_table.php&#10;hike_man&#9;FILE&#9;file://E:/Learning/Php/Laravel/Pohod/resources/views/pages/hike_management.blade.php&#10;hike_ma&#9;FILE&#9;file://E:/Learning/Php/Laravel/Pohod/resources/views/pages/hiker_management.blade.php&#10;HO&#9;FILE&#9;file://C:/Users/JankoHP/Code/Pohod/app/Http/Controllers/HomeController.php&#10;ro&#9;FILE&#9;file://C:/Users/JankoHP/Code/Pohod/app/Http/routes.php&#10;da&#9;FILE&#9;file://C:/Users/JankoHP/Code/Pohod/resources/views/pages/dashboard.blade.php&#10;them&#9;FILE&#9;file://C:/Users/JankoHP/Code/Pohod/public/css/theme.css&#10;in&#9;FILE&#9;file://C:/Users/JankoHP/Code/Pohod/resources/views/pages/index.blade.php&#10;sez&#9;FILE&#9;file://C:/Users/JankoHP/Code/Pohod/resources/views/pages/seznam_prijavljenih.blade.php&#10;pri&#9;FILE&#9;file://C:/Users/JankoHP/Code/Pohod/resources/views/pages/prijava.blade.php&#10;prija&#9;FILE&#9;file://C:/Users/JankoHP/Code/Pohod/resources/views/pages/prijava.blade.php&#10;create&#9;FILE&#9;file://C:/Users/JankoHP/Code/Pohod/database/migrations/2016_03_02_110528_create_hikers_table.php&#10;D&#9;FILE&#9;file://C:/Users/JankoHP/Code/Pohod/app/Http/Controllers/DashboardController.php&#10;Dash&#9;FILE&#9;file://C:/Users/JankoHP/Code/Pohod/app/Http/Controllers/DashboardController.php&#10;HIkes&#9;FILE&#9;file://C:/Users/JankoHP/Code/Pohod/app/Http/Controllers/HikesController.php" />
@@ -393,14 +388,15 @@
     <property name="js-jscs-nodeInterpreter" value="C:\Program Files\nodejs\node.exe" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\JankoHP\Code\Pohod\resources\assets" />
-      <recent name="C:\Users\JankoHP\Code\Pohod\public" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\DATA\PHP\Laravel\Pohod" />
       <recent name="C:\Users\JankoHP\Code\Pohod" />
       <recent name="E:\Learning\Php\Laravel\Pohod\resources\lang" />
       <recent name="C:\Users\JankoHP\Code\Pohod\vendor" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\JankoHP\Code\Pohod\resources\assets" />
+      <recent name="C:\Users\JankoHP\Code\Pohod\public" />
     </key>
   </component>
   <component name="RunManager">
@@ -457,18 +453,19 @@
       <workItem from="1460008227969" duration="36848000" />
       <workItem from="1462605692084" duration="535000" />
       <workItem from="1462606344555" duration="2268000" />
+      <workItem from="1466949138810" duration="643000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="64178000" />
+    <option name="totallyTimeSpent" value="64821000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="false" />
+    <frame x="-14" y="-14" width="3868" height="2098" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24011713" sideWeight="0.49563318" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24010417" sideWeight="0.49563318" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -814,31 +811,20 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="935">
           <caret line="55" column="0" selection-start-line="55" selection-start-column="0" selection-end-line="55" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.env">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="17" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/routes.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
+        <state relative-caret-position="924">
           <caret line="37" column="103" selection-start-line="37" selection-start-column="93" selection-end-line="37" selection-end-column="103" />
-          <folding>
-            <marker date="1462605533083" expanded="false" signature="9:88" placeholder="..." />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/DashboardController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
+        <state relative-caret-position="495">
           <caret line="19" column="45" selection-start-line="19" selection-start-column="45" selection-end-line="19" selection-end-column="45" />
           <folding />
         </state>
@@ -846,7 +832,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
+        <state relative-caret-position="231">
           <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
           <folding />
         </state>
@@ -854,32 +840,32 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/public/css/theme.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
+        <state relative-caret-position="132">
           <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/readme.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="233">
-            <caret line="34" column="0" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
-            <folding />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
       <provider editor-type-id="text-editor">
         <state relative-caret-position="17">
           <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
           <folding />
         </state>
       </provider>
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="1122">
+            <caret line="34" column="0" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/pages/event_signup.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-32">
+        <state relative-caret-position="1584">
           <caret line="48" column="80" selection-start-line="48" selection-start-column="80" selection-end-line="48" selection-end-column="80" />
           <folding />
         </state>
@@ -887,7 +873,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/pages/event_details.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
+        <state relative-caret-position="792">
           <caret line="24" column="10" selection-start-line="24" selection-start-column="10" selection-end-line="24" selection-end-column="10" />
           <folding />
         </state>
@@ -895,7 +881,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/pages/create_event.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="612">
+        <state relative-caret-position="1188">
           <caret line="36" column="21" selection-start-line="36" selection-start-column="20" selection-end-line="36" selection-end-column="21" />
           <folding />
         </state>
@@ -903,7 +889,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/EventsController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="529">
+        <state relative-caret-position="1320">
           <caret line="47" column="12" selection-start-line="47" selection-start-column="12" selection-end-line="47" selection-end-column="12" />
           <folding>
             <element signature="e#40#54#0#PHP" expanded="true" />
@@ -913,11 +899,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/HikesController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
+        <state relative-caret-position="529">
           <caret line="119" column="31" selection-start-line="119" selection-start-column="31" selection-end-line="119" selection-end-column="31" />
           <folding>
             <element signature="e#40#59#0#PHP" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.env">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
+          <folding />
         </state>
       </provider>
     </entry>
